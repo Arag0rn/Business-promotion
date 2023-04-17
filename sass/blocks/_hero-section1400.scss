@@ -1,0 +1,50 @@
+@media screen and (min-width: 1400px) {
+.hero {
+    padding-top: 25px;
+    padding-bottom: 100px;
+
+}
+.hero-section-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.hero-img {
+   width: 600px;
+}
+
+.hero-block {
+    align-self: center;
+}
+
+.hero-text {
+    width: 465px;
+
+}
+.btn {
+    @include button-style;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.hero-link {
+  margin-left: 28px;
+    
+}
+.hero-link-icon {
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+}
+
+.hero-link-text {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #02897A;
+}
+
+}

@@ -1,0 +1,122 @@
+.price{
+    padding-top: 61px;
+    padding-bottom: 100px;
+}
+.price-container {
+    width: auto;
+}
+.price-heads {
+    text-align: center;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+}
+.price-subhead {
+    margin-top: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.price-list {
+    margin-top: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price-list-item{
+    margin-top: 32px;
+    @include price-card();
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 40px;
+    }
+   
+} 
+.price-list-item:first-child{
+    margin-top: 0;
+}
+.price-list-item:nth-child(2){
+    background-color: $main-color;
+    color:#FFFFFF;
+
+}
+.price-list-item:nth-child(2) .price-list-number{
+    color:#FFFFFF;
+}
+.price-list-item:nth-child(2) .price-btn {
+    background: #FFFFFF;
+    color:$main-color;
+}
+    
+.price-list-text{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    margin-top: 16px;
+    }
+.price-list-number{
+    position: relative;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 100px;
+    align-self: start;
+    letter-spacing: 0.2px;
+    margin-top: 16px;
+    color:$main-color;
+}
+.price-list-number::before {
+    position: absolute;
+    content: '$';
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    top: 20%;
+    left: 110%;
+    }
+.price-list-number::after {
+    position: absolute;
+    font-family: 'Montserrat';
+    width: 98px;
+    content: 'Per / month';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1px;
+    color: #AFAFAF;
+    left: 110%;
+    top: 50%;
+    }
+.price-btn {
+    font-family: 'Montserrat';
+    padding: 11px 18px;
+    margin-top: 38px;
+    width: 139px;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 1400px){
+    .price {
+        padding-top:100px;
+        padding-bottom: 100px;
+    }
+    .price-list {
+        display: flex;
+        flex-direction: row;
+        gap: 72px;
+    }
+    .price-container {
+        width: 1110px ;
+    }
+    .price-list-item {
+        margin-top: 0;
+    }
+
+}

@@ -1,0 +1,115 @@
+.quick-easy {
+    position: relative;
+    padding-top: 130px;
+}
+.quick-easy::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url(/images/Bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    bottom: 200px;
+    transform: translateY(-100%);
+    overflow: hidden;
+    z-index: -10;
+    transform: rotate(180deg);
+}
+.quick-easy .btn{
+    display: inherit;
+    margin: 32px auto;
+}
+.container {
+}
+.quick-easy-head {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+}
+.quick-easy-subtext {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+.quick-easy-list {
+    margin-top: 40px;
+}
+.quick-easy-list-item {
+    display: flex;
+    align-items: center;
+    gap: 40px ;
+    margin-top: 32px;
+}
+.quick-easy-list-text {
+    width: 198px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.quick-easy-list-item:nth-child(2n) {
+    flex-direction: row-reverse;
+
+}
+
+@media screen and (min-width:1400px) {
+    .quick-easy-list {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+        justify-content: center;
+    }
+    .quick-easy-list-text {
+        position: relative;
+        width: 240px;
+        text-align: center;
+        margin-bottom: 20px;
+        
+    }
+    .quick-easy-list-item:nth-child(3){
+        flex-direction: row-reverse;
+    }
+    .quick-easy-list-item:nth-child(4){
+        flex-direction: row;
+    }
+    .quick-easy .btn{
+        margin: 50px auto;
+    }
+
+    .quick-easy {
+        padding-bottom: 100px;
+    }
+
+    .quick-easy-list-text::after{
+        position: absolute;
+        content: "";
+        display: block;
+        background-image: url(/images/cloud.png);
+        width: 300px;
+        height: 74px;
+        bottom: 36%;
+        right: -13%;
+        transform: translateY(50%);
+        z-index: -1;
+
+    }
+
+    .quick-easy-subtext {
+        width: 542px;
+        text-align: center;
+        margin: 25px auto;
+    }
+    .quick-easy-list-item{
+        margin-top: 20px;
+    }
+    
+    .quick-easy-list-item:nth-child(2) .quick-easy-list-text::after, .quick-easy-list-item:nth-child(3) .quick-easy-list-text::after{
+        background-image: url(/images/cloud2.png);
+    }
+
+}

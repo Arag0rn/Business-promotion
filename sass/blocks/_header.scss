@@ -1,0 +1,57 @@
+header{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
+    
+}
+.header{
+    display: flex;
+    gap: 8px;
+    &__logo{
+        width: 40px;
+        height: 36px;
+    }
+    &__logo-2{
+        align-self: center;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 28px;
+        color: #173A56;
+    }
+}
+
+.gamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-self: center;
+
+    span{
+        display: block;
+        width: 21px;
+        height: 3px;
+        background-color: #173A56;
+        border-radius: 3px;
+    }
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.header-list {
+    display: none;
+}
+
+.header-nav{
+    .btn {
+       display: none;
+
+    }
+    .dark-mode-icon {
+        display: none;
+
+    }
+}

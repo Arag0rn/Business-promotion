@@ -1,0 +1,130 @@
+.product {
+    position: relative;
+    padding-top: 116px;
+    padding-bottom: 37px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.product::after{
+    position: absolute;
+    content: '';
+    display: block;
+    background-image:url(/images/Bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%; 
+    height: 100%;
+    top: 36%;
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+.product .product-container {
+    text-align: center;
+  
+}
+.icon-bacgr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+    background-color:$main-color;
+}
+.icon-bacgr2{
+    background-color:#4D8DFF;
+}
+.icon-bacgr3{
+    background-color:#740A76;
+}
+.icon-bacgr4{
+    background-color:#F03E3D;
+}
+.product-list-icon{
+    width: 18px;
+    height: 18px;
+    .icon{
+        display: block;
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+.product-list-item {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-head{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.product-list-head{
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+}
+.product-list-txt{
+    margin-top: 8px;
+    width: 226px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+.product-btn {
+    @include button-style;
+    padding: 15px 34px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 30px;
+    
+                          
+}
+
+
+
+@media screen and (min-width: 1400px) {
+    .product-list{
+        display: flex;
+        justify-content: space-between;
+       
+        
+    }
+    .product-list-item{
+        align-items: flex-start;
+    }
+
+    .product-list-txt{
+        text-align: start;
+    }
+
+    .product-head{
+        width: 535px;
+        margin: 0 auto;
+    }
+    .product .product-container {
+        text-align: center;
+        padding-bottom: 43px;
+      
+}
+    .product::after{
+        top: 17%;
+    }
+
+    
+}
+
+
+
