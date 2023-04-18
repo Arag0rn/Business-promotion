@@ -15,10 +15,12 @@
         font-size: 16px;
         line-height: 28px;
         color: #22343D;
+        transition: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
         li{
         &:hover, &:focus {
             font-weight: 500;
             cursor: pointer;
+            
         }
         }
     }
